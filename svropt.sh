@@ -15,6 +15,8 @@ chmod 777 /var/log/usr
 echo -e "\n\nSSH Configuration\n"
 echo "Port 2222" >> /etc/ssh/sshd_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+echo "MaxAuthTries 3" >> /etc/ssh/sshd_config
+echo "LogLevel VERBOSE" >> /etc/ssh/sshd_config
 
 echo -e "\n\nSetting up Firewall\n"
 sudo ufw default deny incoming
