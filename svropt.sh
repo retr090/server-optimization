@@ -16,7 +16,7 @@ echo -e "\n\nSSH Configuration\n"
 echo "Port 2222" >> /etc/ssh/sshd_config
 echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 echo "MaxAuthTries 3" >> /etc/ssh/sshd_config
-#echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config
+echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config
 
 echo -e "\n\nSetting up Firewall\n"
 sudo ufw default deny incoming
